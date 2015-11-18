@@ -24,6 +24,6 @@ setup(
 			"excludes": ["tkinter"]
 			}
 		},
-    console = ["turbomeme.py"],
+    console = ["ghetto_filter.py"],
 	zipfile = None,
 )
