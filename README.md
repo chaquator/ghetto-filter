@@ -31,8 +31,8 @@ optional arguments:
                         Default: 15; Quality of output jpeg from 0 to 100
 ```
 
-## Releases
-one sec ill get that later
+## Install
+You can either download this repo or just check [releases](https://github.com/Chaquator/ghetto-filter/releases)
 						
 ## Build
 Run `setup.py` inside the directory to compile it into a single `.exe` file. 
