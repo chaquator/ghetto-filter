@@ -1,7 +1,6 @@
 from PIL import Image
 from PIL import ImageEnhance
 from PIL import ImageFilter
-from io import BytesIO
 import argparse
 
 #Takes PIL image, memes image, and returns new image
@@ -20,26 +19,26 @@ def main():
 	argParser.add_argument("-sh", "--sharpness",
 							metavar = "float",
 							type = float,
-							default = 5.0,
-							help = "Default: 5.0; Sharpness for the image")
+							default = 15.0,
+							help = "Default: 15.0; Sharpness for the image")
 							
 	argParser.add_argument("-co", "--contrast",
 							metavar = "float",
 							type = float,
-							default = 3.0,
-							help = "Default: 3.0; Contrast for the image")
+							default = 1.25,
+							help = "Default: 1.25; Contrast for the image")
 							
 	argParser.add_argument("-cf", "--color-factor",
 							metavar = "float",
 							type = float,
-							default = 0.7,
-							help = "Default: 0.7; 0.0 represents black and white; 1.0 represents full, original color; and going further increases the vibrance of the color.")
+							default = 1.25,
+							help = "Default: 1.25; 0.0 represents black and white; 1.0 represents full, original color; and going further increases the vibrance of the color.")
 							
 	argParser.add_argument("-q", "--quality",
 							metavar = "int",
 							type = int,
-							default = 15,
-							help = "Default: 15; Quality of output jpeg from 0 to 100")
+							default = 65,
+							help = "Default: 65; Quality of output jpeg from 0 to 100")
 							
 	argParser.add_argument("output",
 							metavar = "output",

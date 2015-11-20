@@ -3,6 +3,17 @@
 Ghetto-filter is a little Python CLI tool that "ghetto-ifies" an image.
 It runs on Python 3.4(.2).
 
+
+## Sample Images
+
+Original is on the left and the ghetto-ified is on the right
+
+![1st Image](samples/1.png)
+![2nd Image](samples/2.png)
+![3rd Image](samples/3.png)
+![4th Image](samples/4.png)
+![5th Image](samples/5.png)
+
 ## Usage
 Like [my last repo](https://github.com/Chaquator/turbo-meme-generator), I'm letting argparse make the usage for me.
 ```
@@ -20,15 +31,16 @@ optional arguments:
   -i file, --input file
                         Input file (Required)
   -sh float, --sharpness float
-                        Default: 5.0; Sharpness for the image
+                        Default: 15.0; Sharpness for the image
   -co float, --contrast float
-                        Default: 3.0; Contrast for the image
+                        Default: 1.25; Contrast for the image
   -cf float, --color-factor float
-                        Default: 0.7; 0.0 represents black and white; 1.0
+                        Default: 1.25; 0.0 represents black and white; 1.0
                         represents full, original color; and going further
                         increases the vibrance of the color.
   -q int, --quality int
-                        Default: 15; Quality of output jpeg from 0 to 100
+                        Default: 65; Quality of output jpeg from 0 to 100
+
 ```
 
 ## Install
