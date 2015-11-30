@@ -20,7 +20,8 @@ setup(
 			"optimize": 2,
 			"dist_dir": ".",
 			"includes": ["PIL.Image",
-							"PIL.ImageOps"],
+						"PIL.ImageEnhance",
+						"PIL.ImageFilter"],
 			"excludes": ["tkinter"]
 			}
 		},
