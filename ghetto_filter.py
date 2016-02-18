@@ -40,13 +40,25 @@ def main():
 							default = 65,
 							help = "Default: 65; Quality of output jpeg from 0 to 100")
 							
+	argParser.add_argument("-r", "--repetitions",
+							metavar = "int",
+							type = int,
+							default = 1,
+							help = "Default: 1; How many times you want to apply the specified settings to the image.")
+							
 	argParser.add_argument("output",
 							metavar = "output",
 							type = str)
 	
 	args = argParser.parse_args()
-		
-	memeImage(Image.open(args.input), args.sharpness, args.contrast, args.color_factor).save(args.output, format = "JPEG", quality = args.quality)
+	
+	img = Image.open(args.input)
+	
+	for i in range(args.repeats):
+		print("ayy lmao " + str(i))
+		img = memeImage(Image.open(args.input), args.sharpness, args.contrast, args.color_factor)
+	
+	img.save(args.output, format = "JPEG", quality = args.quality)
 	
 if __name__ == "__main__":
 	main()
