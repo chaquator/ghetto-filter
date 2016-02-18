@@ -55,7 +55,6 @@ def main():
 	img = Image.open(args.input)
 	
 	for i in range(args.repetitions):
-		print("ayy lmao " + str(i))
 		img = memeImage(Image.open(args.input), args.sharpness, args.contrast, args.color_factor)
 	
 	img.save(args.output, format = "JPEG", quality = args.quality)
