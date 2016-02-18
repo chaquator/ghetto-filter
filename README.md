@@ -12,7 +12,6 @@ Original is on the left and the ghetto-ified is on the right
 ![2nd Image](samples/2.png)
 ![3rd Image](samples/3.png)
 ![4th Image](samples/4.png)
-![5th Image](samples/5.png)
 
 ## Usage
 Like [my last repo](https://github.com/Chaquator/turbo-meme-generator), I'm letting argparse make the usage for me.
