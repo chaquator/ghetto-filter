@@ -18,7 +18,7 @@ Original is on the left and the ghetto-ified is on the right
 Like [my last repo](https://github.com/Chaquator/turbo-meme-generator), I'm letting argparse make the usage for me.
 ```
 usage: ghetto_filter.py [-h] -i file [-sh float] [-co float] [-cf float]
-                        [-q int]
+                        [-q int] [-r int]
                         output
 
 Ghetto Filter for image
@@ -40,7 +40,9 @@ optional arguments:
                         increases the vibrance of the color.
   -q int, --quality int
                         Default: 65; Quality of output jpeg from 0 to 100
-
+  -r int, --repetitions int
+                        Default: 1; How many times you want to apply the
+                        specified settings to the image.
 ```
 
 ## Install
