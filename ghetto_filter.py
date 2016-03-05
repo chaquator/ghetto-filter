@@ -3,9 +3,13 @@ from PIL import ImageEnhance
 from PIL import ImageFilter
 import argparse
 
-#Takes PIL image, memes image, and returns new image
-def memeImage(img, sharpness_factor = 5, contrast_factor = 3, color_factor = 0.7):
-	return ImageEnhance.Sharpness(ImageEnhance.Contrast(ImageEnhance.Color(img).enhance(color_factor)).enhance(contrast_factor)).enhance(sharpness_factor)
+# takes PIL image, memes image, and returns new image
+def memeImage(inImg, sharpness_factor = 15, contrast_factor = 1.25, color_factor = 1.25):
+	# split this into 3 lines so that it's easie to report where something goes wrong
+	tempImg = ImageEnhance.Color(inImg).enhance(color_factor)
+	tempImg = ImageEnhance.Contrast(tempImg).enhance(contrast_factor)
+	tempImg = ImageEnhance.Sharpness(tempImg).enhance(sharpness_factor)
+	return tempImg
 	
 def main():
 	argParser = argparse.ArgumentParser(description = "Ghetto Filter for image")
@@ -55,7 +59,7 @@ def main():
 	img = Image.open(args.input)
 	
 	for i in range(args.repetitions):
-		img = memeImage(Image.open(args.input), args.sharpness, args.contrast, args.color_factor)
+		img = memeImage(img, args.sharpness, args.contrast, args.color_factor)
 	
 	img.save(args.output, format = "JPEG", quality = args.quality)
 	
