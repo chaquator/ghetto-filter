@@ -54,7 +54,7 @@ def main():
 							metavar = "name",
 							type = str,
 							default = "regular",
-							help = "Default: regular; Different profiles to use. Profiles are \"default\", \"colorful\", \"sharp\", and \"contrast\".")
+							help = "Default: regular; Different profiles to use. Profiles are \"default\", \"colorful\", \"sharp\", \"contrast\", and \"cook\".")
 							
 	profiles = {
 				"default": { "sharp": 1.25, "con": 1.25 , "col": 1.25, "qual": 65, "rep": 1 },
