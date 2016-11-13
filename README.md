@@ -8,10 +8,11 @@ It runs on Python 3.4(.2).
 
 Original is on the left and the ghetto-ified is on the right
 
-![1st Image](samples/1.png)
-![2nd Image](samples/2.png)
-![3rd Image](samples/3.png)
-![4th Image](samples/4.png)
+![1st Image](samples/colorful.jpg)
+![2nd Image](samples/contrast.jpg)
+![3rd Image](samples/default.jpg)
+![4th Image](samples/sharp.jpg)
+![4th image](samples/cook.jpg)
 
 ## Usage
 Like [my last repo](https://github.com/Chaquator/turbo-meme-generator), I'm letting argparse make the usage for me.

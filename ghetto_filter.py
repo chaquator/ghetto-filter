@@ -61,7 +61,7 @@ def main():
 				"contrast": { "sharp": 1.5, "con": 10, "col": 1, "qual": 50, "rep": 10 },
 				"sharp": { "sharp": 10, "con": 1.25, "col": 1, "qual": 50, "rep": 10 },
 				"colorful": { "sharp": 1, "con": 1, "col": 10, "qual": 50, "rep": 10 },
-				"cook": {"sharp": 15, "con": 1, "col": 12, "qual": 1, "rep": 5}
+				"cook": {"sharp": 25, "con": 3, "col": 5, "qual": 1, "rep": 5}
 			}
 	
 	args = argParser.parse_args()
